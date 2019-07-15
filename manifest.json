@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
     "name": "NF Unspoilify",
-    "version": "1.0.1",
-    "description": "Removes those nefarious Netflix pause descriptions. At least until they decide to rename some CSS tags.",
+    "version": "1.0.2",
+    "description": "Removes those nefarious Netflix pause descriptions. Watch your favorite show without spoiler anxiety.",
     "content_scripts": [
       {
         "matches": ["*://*.netflix.com/*"],
