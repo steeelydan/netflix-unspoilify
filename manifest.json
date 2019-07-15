@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "NF Unspoilify",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Removes those nefarious Netflix pause descriptions. At least until they decide to rename some CSS tags.",
     "content_scripts": [
       {
@@ -9,6 +9,10 @@
         "js": ["removedesc.js"]
       }
     ],
+    "icons": {
+      "48": "/icon/icon.png",
+      "96": "/icon/icon@2x.png"
+    },
     "permissions": [
         "*://*.netflix.com/*"
     ],
