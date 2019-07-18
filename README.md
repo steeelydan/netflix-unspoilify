@@ -3,10 +3,8 @@ Removes those nefarious Netflix pause descriptions. At least until they decide t
 
 A very simple Firefox extension, available for download at: https://addons.mozilla.org/en-US/firefox/addon/unspoilify-netflix/
 
-Before:
 ![Before screenshot](/screenshots/before.jpg?raw=true "Before screenshot")
 
-After:
 ![After screenshot](/screenshots/after.jpg?raw=true "After screenshot")
 
 ## Attributions
