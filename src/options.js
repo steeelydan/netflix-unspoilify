@@ -1,13 +1,6 @@
 var hideInPlayerMenuStored = browser.storage.local.get('hideInPlayerMenu');
 
 hideInPlayerMenuStored.then((response) => {
-    // Default setting: true
-    if (!Object.keys(response).length) {
-        browser.storage.local.set({
-            hideInPlayerMenu: true
-        });
-    }
-
     document.querySelector('#hideInPlayerMenu').checked =
         response.hideInPlayerMenu;
 });

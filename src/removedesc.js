@@ -3,6 +3,13 @@ injectCss('removepausedesc.css');
 var hideInPlayerMenuStored = browser.storage.local.get('hideInPlayerMenu');
 
 hideInPlayerMenuStored.then(function (response) {
+    // Default setting: true
+    if (!Object.keys(response).length) {
+        browser.storage.local.set({
+            hideInPlayerMenu: true
+        });
+    }
+
     if (response.hideInPlayerMenu) {
         injectCss('removeplayerdesc.css');
     }
