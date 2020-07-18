@@ -8,6 +8,8 @@ hideInPlayerMenuStored.then(function (response) {
         browser.storage.local.set({
             hideInPlayerMenu: true
         });
+
+        injectCss('removeplayerdesc.css');
     }
 
     if (response.hideInPlayerMenu) {
