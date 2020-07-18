@@ -8,6 +8,8 @@ A very simple Firefox extension, available for download at: https://addons.mozil
 
 ![After screenshot](screenshots/after.jpg?raw=true 'After screenshot')
 
+![Player screenshot](screenshots/player.jpg?raw=true 'After screenshot')
+
 ## Development
 
 Create distribution (7z must be installed):
@@ -15,6 +17,10 @@ Create distribution (7z must be installed):
 ```bash
 sh dist.sh <version>
 ```
+
+## Changelog
+
+- 1.1.0: Added the ability to remove the episode synopses from the player UI. Enabled per default, can be disabled in the addon preferences.
 
 ## Attributions
 
