@@ -4,17 +4,19 @@
     "version": "1.0.3",
     "description": "Removes those nefarious Netflix pause descriptions. Watch your favorite show without spoiler anxiety.",
     "content_scripts": [
-      {
-        "matches": ["*://*.netflix.com/*"],
-        "js": ["removedesc.js"]
-      }
+        {
+            "matches": ["*://*.netflix.com/*"],
+            "js": ["src/removedesc.js"]
+        }
     ],
     "icons": {
-      "48": "/icon/icon.png",
-      "96": "/icon/icon@2x.png"
+        "48": "/icon/icon.png",
+        "96": "/icon/icon@2x.png"
     },
-    "permissions": [
-        "*://*.netflix.com/*"
-    ],
-    "web_accessible_resources": ["removedesc.css"]
-  }
+    "permissions": ["*://*.netflix.com/*", "storage"],
+    "web_accessible_resources": ["src/removepausedesc.css", "src/removeplayerdesc.css"],
+    "options_ui": {
+        "page": "src/options.html",
+        "browser_style": true
+    }
+}
