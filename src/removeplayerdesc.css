@@ -1,3 +1,7 @@
 .synopsis {
     display: none;
 }
+
+.jawbone-overview-info .synopsis {
+    display: block;
+}
