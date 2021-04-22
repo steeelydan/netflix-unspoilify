@@ -8,14 +8,18 @@
     <body>
         <form>
             <div>
-                <label for="hideInPlayerMenu"
-                    >Hide episode synopsis in player menu. Reload Netflix after
-                    changing.</label
+                <input type="checkbox" id="hideInPlayerMenu" />&nbsp;<label for="hideInPlayerMenu"
+                    >Hide episode synopsis in player menu. Reload Netflix after changing.</label
                 >
-                <input type="checkbox" id="hideInPlayerMenu" />
             </div>
             <div>
-                <button type="submit">Save</button>
+                <input type="checkbox" id="hideInAppMenu" />&nbsp;<label for="hideInAppMenu"
+                    >Hide episode synopsis in the Netflix app (video selection, episode list,
+                    dashboard). Reload Netflix after changing.</label
+                >
+            </div>
+            <div>
+                <button type="submit" style="margin-top: 0.5rem">Save</button>
             </div>
         </form>
         <script src="options.js"></script>

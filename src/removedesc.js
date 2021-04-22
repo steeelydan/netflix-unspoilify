@@ -1,6 +1,7 @@
 injectCss('removepausedesc.css');
 
 var hideInPlayerMenuStored = browser.storage.local.get('hideInPlayerMenu');
+var hideInAppMenuStored = browser.storage.local.get('hideInAppMenu');
 
 hideInPlayerMenuStored.then(function (response) {
     // Default setting: true
@@ -14,6 +15,21 @@ hideInPlayerMenuStored.then(function (response) {
 
     if (response.hideInPlayerMenu) {
         injectCss('removeplayerdesc.css');
+    }
+});
+
+hideInAppMenuStored.then(function (response) {
+    // Default setting: true
+    if (!Object.keys(response).length) {
+        browser.storage.local.set({
+            hideInAppMenu: true
+        });
+
+        injectCss('removemenudesc.css');
+    }
+
+    if (response.hideInAppMenu) {
+        injectCss('removemenudesc.css');
     }
 });
 
