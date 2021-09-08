@@ -1,3 +1,3 @@
-.evidence-overlay p {
+[data-uia="evidence-overlay-synopsis"] {
     display: none;
 }
