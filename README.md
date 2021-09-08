@@ -24,6 +24,7 @@ Tested on Ubuntu 20.04.
 
 ## Changelog
 
+-   1.2.1: New selector for pause spoiler
 -   1.2.0: Fixed class names (they finally changed some!). Added ability to remove spoilers from the dashboard & episode lists.
 -   1.1.0: Added the ability to remove the episode synopses from the player UI. Enabled per default, can be disabled in the addon preferences.
 
