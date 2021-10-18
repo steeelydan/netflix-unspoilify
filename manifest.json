@@ -1,12 +1,12 @@
 {
     "manifest_version": 2,
     "name": "Unspoilify Netflix",
-    "version": "1.2.1",
+    "version": "2.0.0",
     "description": "Removes those nefarious Netflix pause descriptions. Watch your favorite show without spoiler anxiety.",
     "content_scripts": [
         {
             "matches": ["*://*.netflix.com/*"],
-            "js": ["src/removedesc.js"]
+            "js": ["src/removespoilers.js"]
         }
     ],
     "icons": {
@@ -14,7 +14,7 @@
         "96": "/icon/icon@2x.png"
     },
     "permissions": ["*://*.netflix.com/*", "storage"],
-    "web_accessible_resources": ["src/removepausedesc.css", "src/removeplayerdesc.css", "src/removemenudesc.css"],
+    "web_accessible_resources": ["src/removepausesynopsis.css", "src/removeepisodesynopsis.css", "src/removegeneralsynopsis.css"],
     "options_ui": {
         "page": "src/options.html",
         "browser_style": true

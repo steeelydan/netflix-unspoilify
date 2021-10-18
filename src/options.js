@@ -1,19 +1,19 @@
-var hideInPlayerMenuStored = browser.storage.local.get('hideInPlayerMenu');
-var hideInAppMenuStored = browser.storage.local.get('hideInAppMenu');
+var hideEpisodeSynopsisStored = browser.storage.local.get('hideEpisodeSynopsis');
+var hideGeneralSynopsisStored = browser.storage.local.get('hideGeneralSynopsis');
 
-hideInPlayerMenuStored.then((response) => {
-    document.querySelector('#hideInPlayerMenu').checked =
-        response.hideInPlayerMenu;
+hideEpisodeSynopsisStored.then((response) => {
+    document.querySelector('#hideEpisodeSynopsis').checked =
+        response.hideEpisodeSynopsis;
 });
 
-hideInAppMenuStored.then((response) => {
-    document.querySelector('#hideInAppMenu').checked = response.hideInAppMenu;
+hideGeneralSynopsisStored.then((response) => {
+    document.querySelector('#hideGeneralSynopsis').checked = response.hideGeneralSynopsis;
 });
 
 function saveOptions(event) {
     browser.storage.local.set({
-        hideInPlayerMenu: document.querySelector('#hideInPlayerMenu').checked,
-        hideInAppMenu: document.querySelector('#hideInPlayerMenu').checked
+        hideEpisodeSynopsis: document.querySelector('#hideEpisodeSynopsis').checked,
+        hideGeneralSynopsis: document.querySelector('#hideGeneralSynopsis').checked
     });
 
     event.preventDefault();

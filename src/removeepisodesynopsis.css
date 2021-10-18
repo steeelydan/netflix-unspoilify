@@ -1,0 +1,14 @@
+/* Player: episode list synopsis */
+[data-uia=episode-pane-item-preview-open] span {
+    display: none;
+}
+
+/* App menu: current episode synopsis */
+.previewModal-episodeDetails + .preview-modal-synopsis {
+    display: none;
+}
+
+/* App menu: episode list synopsis */
+.titleCardList-title + .titleCard-synopsis {
+    display: none;
+}
